@@ -1,15 +1,17 @@
 //variables
-let numeroSecreto = 6;
+let numeroSecreto = Math.floor(Math.random() * 10) + 1;
 let numeroUsuario = 0;
 let intentos = 1;
 // let palabraVeces = 'vez';
 let maximosIntentos = 2;
 
+console.log(numeroSecreto);
+//bucle
 
 while (numeroUsuario != numeroSecreto) {
-    numeroUsuario = prompt("Me indicas un número entre 1 y 10 por favor:");
+    numeroUsuario = parseInt( prompt("Me indicas un número entre 1 y 10 por favor:"));
 
-    console.log(numeroUsuario);
+    console.log( typeof(numeroUsuario));
     if (numeroUsuario == numeroSecreto) {
         //cuando el usuario acierta le informa
         alert(`Acertaste, el número es: ${numeroUsuario}, Lo hiciste en ${intentos} ${intentos == 1 ? 'vez' : 'veces' }`);
