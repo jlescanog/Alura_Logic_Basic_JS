@@ -13,7 +13,7 @@ function verificarIntento() {
     console.log(numeroSecreto);
     console.log(typeof(numeroSecreto));
     console.log(numeroDeUsuario);
-    console.log(numeroDeUsuario == numeroSecreto);
+    console.log(numeroDeUsuario === numeroSecreto);
     return;
 }
 
